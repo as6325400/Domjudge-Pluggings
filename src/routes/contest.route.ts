@@ -6,11 +6,12 @@ class ContestRoute extends Route{
 
   constructor(){
     super();
+    this.prefix = "/contest";
     this.setRoutes();
   }
 
   protected setRoutes() : void{
-
+    this.router.get("/", this.contestController.getContestInformatiom)
   }
 }
 

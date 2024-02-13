@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.ts",
+    "dev": "nodemon src/app.ts",
+    "start": "node prod/app.js",
     "lint": "eslint src/*.ts",
     "fix": "eslint --fix src/*.ts",
     "build": "tsc",
