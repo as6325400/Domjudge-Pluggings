@@ -1,9 +1,9 @@
-import mariadb from 'mariadb';
+import mariadb, {Connection} from 'mariadb';
 import dotenv from 'dotenv';
 
 dotenv.config()
 
-const connection = mariadb.createConnection({
+const connection : Promise<Connection> = mariadb.createConnection({
     host: process.env.DATABASE_HOST, 
     port: Number(process.env.DATABASE_PORT),
     user: process.env.DATABASE_USER, 

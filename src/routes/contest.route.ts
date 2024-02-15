@@ -11,7 +11,7 @@ class ContestRoute extends Route{
   }
 
   protected setRoutes() : void{
-    this.router.get("/", this.contestController.getContestInformatiom)
+    this.router.get("/", (req, res) => this.contestController.getContestInformation(req, res))
   }
 }
 
