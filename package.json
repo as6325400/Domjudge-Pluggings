@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "nodemon src/app.ts",
     "start": "node prod/app.js",
-    "lint": "eslint src/*.ts",
-    "fix": "eslint --fix src/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "fix": "eslint --fix src/**/*.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

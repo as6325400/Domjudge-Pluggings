@@ -1,5 +1,5 @@
-import Route from './base.route'
-import ContestController from '../controllers/contest.controller'
+import Route from "./base.route";
+import ContestController from "../controllers/contest.controller";
 
 class ContestRoute extends Route{
   private contestController = new ContestController();
@@ -11,7 +11,7 @@ class ContestRoute extends Route{
   }
 
   protected setRoutes() : void{
-    this.router.get("/", (req, res) => this.contestController.getContestInformation(req, res))
+    this.router.get("/", (req, res) => this.contestController.getContestInformation(req, res));
   }
 }
 

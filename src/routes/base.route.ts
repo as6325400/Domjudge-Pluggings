@@ -14,4 +14,4 @@ abstract class Route{
   }
 }
 
-export default Route
+export default Route;
